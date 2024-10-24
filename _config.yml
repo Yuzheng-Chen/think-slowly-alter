@@ -155,3 +155,18 @@ feed:
     enable: true
     template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
     output: "feed.json"
+
+algolia:
+  appId: YN0JWQ3P08
+  apiKey: cfc0b0227e36183dcb402011fa791695
+  adminApiKey: f7bdd1643d0c4ecfca69146664e9af93
+  chunkSize: 5000
+  indexName: "ShokaX"
+  fields:
+    - title #必须配置
+    - path #必须配置
+    - categories #推荐配置
+    - content:strip:truncate,0,2000
+    - gallery
+    - photos
+    - tags
