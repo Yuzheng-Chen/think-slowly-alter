@@ -3,21 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Think Slowly"
-subtitle: "Steer clear of fleeting impulses, and let the quiet depths of wisdom unfold."
-description: "Yuzheng Chen"
+title: Steer clear of fleeting impulses, and let the quiet depths of wisdom unfold
+subtitle: ""
+description: ""
 keywords:
-  - hexo
-  - theme
-  - kratos-rebirth
-author: All contributors
+author: Yuzi
 language: en
-timezone: ""
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.yuzheng-chen.top
-permalink: posts/:title/
+url: http://example.com
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -34,30 +31,27 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :new-post.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: []
+  exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
-marked:
-  prependRoot: true
-  postAsset: true
+post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
+syntax_highlighter: false
 highlight:
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
-  preprocess: true
+  preprocess: false
   line_number: true
   tab_replace: ""
 
@@ -71,7 +65,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: 无家可归的文章君T-T
+default_category: uncategorized
 category_map:
 tag_map:
 
@@ -102,25 +96,60 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: shoka
-
-plugin:
-  - hexo-generator-feed
-  - hexo-generator-sitemap
-
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
-sitemap:
-  path: sitemap.xml
-  template: ./sitemap_template.xml
-  rel: false
+theme: shokax
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Yuzheng-Chen/think-slowly
-  branch: gh-pages
+  type: ""
+
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer:
+    quotes: "“”‘’"
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 系主题必须设置成这样
+          tocClassName: "toc"
+          anchorClassName: "anchor"
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+feed:
+  limit: 20
+  order_by: "-date"
+  tag_dir: false
+  category_dir: false
+  rss:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/rss.ejs"
+    output: "rss.xml"
+  atom:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/atom.ejs"
+    output: "atom.xml"
+  jsonFeed:
+    enable: true
+    template: "node_modules/hexo-theme-shokax/layout/_alternate/json.ejs"
+    output: "feed.json"
