@@ -54,18 +54,18 @@
   --color-pink-light: rgba(255,230,250,0.72);
   --color-cyan-light-old: #e3fdf5;
   --color-cyan-light: rgba(227,253,245,0.72);
-  --color-red: #e9546b;
-  --color-pink: #ed6ea0;
-  --color-orange: #ec8c69;
+  --color-red: #0a7426; /* Changed red to green */
+  --color-pink: #2c662d; /* Changed pink to a darker green */
+  --color-orange: #3b883c; /* Changed orange to another shade of green */
   --color-yellow: #eab700;
   --color-green: #0a7426;
   --color-aqua: #3e999f;
   --color-blue: #38a1db;
   --color-purple: #9d5b8b;
   --color-grey: #869194;
-  --color-red-a1: rgba(233,84,107,0.1);
-  --color-red-a3: rgba(233,84,107,0.3);
-  --color-pink-a3: rgba(237,110,160,0.3);
+  --color-red-a1: rgba(10,116,38,0.1); /* Adjusted the transparency for green */
+  --color-red-a3: rgba(10,116,38,0.3);
+  --color-pink-a3: rgba(44,102,45,0.3);
   --color-pink-light-a3: rgba(255,230,250,0.3);
   --color-pink-light-a5: rgba(255,230,250,0.5);
   --color-pink-light-a7: rgba(255,230,250,0.7);
@@ -73,7 +73,7 @@
   --box-bg-shadow: var(--grey-9-a1);
   --text-color: var(--grey-7);
   --header-text-color: var(--grey-0);
-  --primary-color: var(--color-red);
+  --primary-color: var(--color-green); /* Made green the primary color */
   --nav-bg: linear-gradient(-225deg, var(--color-cyan-light) 0, var(--color-pink-light) 100%);
 }
 .primary {
@@ -125,9 +125,9 @@
   --grey-2-a0: rgba(54,54,54,0);
   --color-pink-light: #322d31;
   --color-cyan-light: #2d3230;
-  --color-red: rgba(237,118,137,0.9);
-  --color-pink: rgba(241,139,179,0.8);
-  --color-orange: rgba(240,163,135,0.8);
+  --color-red: rgba(16,187,61,0.9); /* Adjusted for green */
+  --color-pink: rgba(66,153,67,0.8); /* Another green variation */
+  --color-orange: rgba(79,179,81,0.8); /* A bit more green */
   --color-yellow: #ffe175;
   --color-green: #86c59d;
   --color-aqua: #97d3d6;
