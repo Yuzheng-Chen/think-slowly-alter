@@ -23,9 +23,9 @@
   --color-cyan-light-old: #e3fdf5;
   --color-cyan-light: alpha(#e3fdf5, .72);
 
-  --color-red: #e9546b;
-  --color-pink: #ed6ea0;
-  --color-orange: #ec8c69;
+  --color-red: #0a7426; /* Changed red to green */
+  --color-pink: #2c662d; /* Changed pink to a darker green */
+  --color-orange: #3b883c; /* Changed orange to another shade of green */
   --color-yellow: #eab700;
   --color-green: #0a7426;
   --color-aqua: #3e999f;
@@ -33,9 +33,9 @@
   --color-purple: #9d5b8b;
   --color-grey: #869194;
 
-  --color-red-a1: alpha(#e9546b, .1);
-  --color-red-a3: alpha(#e9546b, .3);
-  --color-pink-a3: alpha(#ed6ea0, .3);
+  --color-red-a1: alpha(#0a7426, .1); /* Adjusted the transparency for green */
+  --color-red-a3: alpha(#0a7426, .3);
+  --color-pink-a3: alpha(#2c662d, .3);
   --color-pink-light-a3: alpha(#ffe6fa, .3);
   --color-pink-light-a5: alpha(#ffe6fa, .5);
   --color-pink-light-a7: alpha(#ffe6fa, .7);
@@ -44,7 +44,7 @@
   --box-bg-shadow: var(--grey-9-a1);
   --text-color: var(--grey-7);
   --header-text-color: var(--grey-0);
-  --primary-color: var(--color-red);
+  --primary-color: var(--color-green); /* Made green the primary color */
 
   // --nav-bg: linear-gradient(-225deg, var(--color-cyan-light) 0, var(--color-pink-light) 100%);
   --nav-bg: linear-gradient(-225deg, var(--color-cyan-light) 0, var(--color-pink-light) 100%);
@@ -109,9 +109,9 @@
     --color-pink-light: shade(#ffe6fa, 80%);
     --color-cyan-light: shade(#e3fdf5, 80%);
 
-    --color-red: alpha(lighten(#e9546b, 20%), .9);
-    --color-pink: alpha(lighten(#ed6ea0, 20%), .8);
-    --color-orange: alpha(lighten(#ec8c69, 20%), .8);
+    --color-red: alpha(lighten(#0a7426, 20%), .9); /* Adjusted for green */
+    --color-pink: alpha(lighten(#2c662d, 20%), .8); /* Another green variation */
+    --color-orange: alpha(lighten(#3b883c, 20%), .8); /* A bit more green */
     --color-yellow: lighten(#eab700, 50%);
     --color-green: lighten(#316745, 50%);
     --color-aqua: lighten(#3e999f, 50%);
@@ -124,7 +124,7 @@
     --text-color: var(--grey-5);
     --header-text-color: var(--grey-9);
   }
-
+  
   .primary {
     --note-border: alpha(shade(#cda0c7, 40%), .8);
     --note-bg: alpha(shade(#fdf8ff, 80%), .8);

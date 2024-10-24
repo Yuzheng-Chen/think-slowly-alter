@@ -1,17 +1,17 @@
 ---
-title: Reflections in the Mirror # 文章标题
-date: 2024-10-24 01:49:59 # 文章发布日期和时间
-tags: # 标签（多个）
+title: Reflections in the Mirror
+date: 2024-10-24 03:17:31
+updated: 2024-10-24 21:20:52
+tags:
   - life
-categories: # 分类（单个或多个）
+categories:
   - Novel
-description: Reflections in the Mirror is a heartfelt coming-of-age story about Yūto, a primary school boy who mysteriously wakes up one day as a girl named Yuki. Struggling to navigate the complexities of a new identity, Yuki hides her past from her best friend Ren, who has returned from studying abroad as a famous basketball player. As they rekindle their friendship, Yuki wrestles with her secret, fearing how the truth might affect their bond. The story explores themes of self-identity, friendship, and acceptance, as Yuki learns to embrace both her past and present selves. # 简短描述
-author: Yuzi # 作者
-cover: https://api.hanximeng.com/ranimg/api.php # 文章封面图片
-thumbnail: https://api.hanximeng.com/ranimg/api.php # 缩略图
-updated: 2024-10-24 02:00:00 # 更新日期（可选）
-comments: true # 启用/禁用评论（true/false）
-top: 1 # 置顶文章（数值越大，越靠前）
+description: Reflections in the Mirror is a heartfelt coming-of-age story about Yūto, a primary school boy who mysteriously wakes up one day as a girl named Yuki. Struggling to navigate the complexities of a new identity, Yuki hides her past from her best friend Ren, who has returned from studying abroad as a famous basketball player. As they rekindle their friendship, Yuki wrestles with her secret, fearing how the truth might affect their bond. The story explores themes of self-identity, friendship, and acceptance, as Yuki learns to embrace both her past and present selves.
+author: Yuzi
+cover: assets/covers/reflections-in-the-mirror.jpeg
+thumbnail: assets/covers/reflections-in-the-mirror.jpeg
+comments: true
+top: 1
 ---
 
 ### Chapter 1: **The Morning of the Change**
@@ -621,5 +621,3 @@ And as for my identity, I learned that it wasn’t about choosing between Yūto 
 Life continued to move forward, full of new challenges and new joys. But through it all, I knew one thing for certain—I wasn’t alone. I had my friends, my family, and the knowledge that, no matter what, I had the strength to face whatever came next.
 
 And as the years passed, I found peace in knowing that who I was—_who I am_—was enough.
-
-**The End.**

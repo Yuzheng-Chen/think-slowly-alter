@@ -1,0 +1,13 @@
+{
+  "newLinkFormat": "absolute",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_posts",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "assets/imgs",
+  "userIgnoreFilters": [
+    "_data/"
+  ],
+  "livePreview": true,
+  "defaultViewMode": "source"
+}

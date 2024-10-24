@@ -1,19 +1,19 @@
 ---
-title: In the Quiet Moments # 文章标题
-date: 2024-10-24 01:49:59 # 文章发布日期和时间
-tags: # 标签（多个）
+title: In the Quiet Moments
+date: 2024-10-24 01:49:59
+tags:
   - life
   - moments
-categories: # 分类（单个或多个）
+categories:
   - Thoughts
   - Personal
-description: A reflection on life. # 简短描述
-author: Yuzi # 作者
-cover: https://pic.re/image # 文章封面图片
-thumbnail: https://pic.re/image # 缩略图
-updated: 2024-10-24 02:00:00 # 更新日期（可选）
-comments: true # 启用/禁用评论（true/false）
-top: 1 # 置顶文章（数值越大，越靠前）
+description: A reflection on life.
+author: Yuzi
+cover: assets/covers/in-the-quiet-moments.jpg
+thumbnail: assets/covers/in-the-quiet-moments.jpg
+updated: 2024-10-24 21:06:33
+comments: true
+top: 1
 ---
 
 > _In the rush of it all, sometimes stillness is the answer._

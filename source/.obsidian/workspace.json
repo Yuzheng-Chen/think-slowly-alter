@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "04080a70483dbc8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f09b38611b72838",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d27d88d5106312c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/in-the-quiet-moments.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "in-the-quiet-moments"
+            }
+          },
+          {
+            "id": "8367d0b34c67acab",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/covers/It-was-a-dream.jpeg"
+              },
+              "icon": "lucide-image",
+              "title": "It-was-a-dream"
+            }
+          },
+          {
+            "id": "a95fa0abf62c0858",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/Novel/reflections-in-the-mirror.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "reflections-in-the-mirror"
+            }
+          },
+          {
+            "id": "4932324cfb28fe07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/Novel/it-was-a-dream.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "it-was-a-dream"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0a09309322c8faea",
+    "type": "split",
+    "children": [
+      {
+        "id": "53f767adf3cc07a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4836d8a8b7a6185",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5e561b17a966924a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f212798020041fde",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8f49812dc5eccbe3",
+    "type": "split",
+    "children": [
+      {
+        "id": "65dfae8bc311bc95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a9f693bd9f2b06c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "template/Sample.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Sample"
+            }
+          },
+          {
+            "id": "51f495092ee4c70b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b3bf0e478fd105c4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3ad1d8f2d609602b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4932324cfb28fe07",
+  "lastOpenFiles": [
+    "assets/covers/it-was-a-dream.jpeg",
+    "assets/covers/reflections-in-the-mirror.jpeg",
+    "_posts/Novel/it-was-a-dream.md",
+    "assets/avatar.jpg",
+    "_posts/Novel/reflections-in-the-mirror.md",
+    "_posts/Novel/cover.jpg",
+    "assets/banner.jpeg",
+    "assets/banner.jpg",
+    "assets/wallpaper-878514.jpg",
+    "assets/covers/in-the-quiet-moments.jpg",
+    "assets/covers/default-banner.jpeg",
+    "drafts/Anime API Collection.md",
+    "_posts/hello-world.md",
+    "_posts/in-the-quiet-moments.md",
+    "assets/covers/in-the-quiet-moments.webp",
+    "drafts",
+    "template/Default Front-matter.md",
+    "assets/imgs",
+    "assets/covers",
+    "Untitled.md",
+    "samples/images.md",
+    "samples/excerpts.md",
+    "samples/code-highlight.md",
+    "samples/categories.md",
+    "friends/index.md",
+    "_posts/categories.md",
+    "_posts/中文測試.md",
+    "_posts/日本語テスト.md",
+    "samples/computer-science/note/theme-shoka-doc/display.md",
+    "samples/computer-science/note/theme-shoka-doc/special.md",
+    "samples/computer-science/note/theme-shoka-doc/config.md",
+    "samples/computer-science/note/theme-shoka-doc/dependents.md",
+    "samples/computer-science/java/course-1/week-2.md",
+    "samples/computer-science/java/course-1/week-1.md",
+    "samples/computer-science/note/theme-shoka-doc.md",
+    "samples/computer-science/note/theme-shoka-doc",
+    "samples/computer-science/java/course-1",
+    "samples/computer-science/note",
+    "samples/computer-science/java",
+    "samples/computer-science",
+    "samples/elements.md",
+    "samples/gallery-post.md",
+    "samples/link-post-without-title.md",
+    "samples",
+    "template"
+  ]
+}
