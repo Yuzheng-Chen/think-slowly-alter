@@ -101,7 +101,9 @@ theme: shokax
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  repo: https://github.com/Yuzheng-Chen/think-slowly-alter
+  branch: gh-pages
 
 markdown:
   render: # 渲染器设置
