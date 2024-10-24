@@ -214,6 +214,12 @@
 .grey {
   color: var(--color-grey);
 }
+.i-cloud:before {
+  content: "\e659";
+}
+.i-bilibili:before {
+  content: "\e652";
+}
 .i-volume-off:before,
 .player-info .volume.off::before {
   content: "\e61e";
@@ -583,6 +589,9 @@ details summary::before {
 }
 .i-cloud-music:before {
   content: "\e76a";
+}
+.i-gitee:before {
+  content: "\e607";
 }
 /* modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
