@@ -4,7 +4,7 @@
   "newFileFolderPath": "_posts",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "assets/imgs",
+  "attachmentFolderPath": "/assets/imgs",
   "userIgnoreFilters": [
     "_data/"
   ],

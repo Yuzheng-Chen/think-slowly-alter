@@ -11,7 +11,7 @@ description: A reflection on life.
 author: Yuzi
 cover: assets/covers/in-the-quiet-moments.jpg
 thumbnail: assets/covers/in-the-quiet-moments.jpg
-updated: 2024-10-24 21:06:33
+updated: 2024-10-25 11:14:25
 comments: true
 top: 1
 ---

@@ -3,19 +3,24 @@
   "enableCreateTime": true,
   "headerUpdated": "updated",
   "headerCreated": "date",
-  "minMinutesBetweenSaves": 1,
-  "ignoreGlobalFolder": [],
+  "minMinutesBetweenSaves": 30,
+  "ignoreGlobalFolder": [
+    "_data",
+    "friends"
+  ],
   "ignoreCreatedFolder": [
     "_data",
     "friends"
   ],
   "enableExperimentalHash": false,
   "fileHashMap": {
-    "_posts/Novel/reflections-in-the-mirror.md": "7d4ee5fa2c8d90ce69daff4b6325cd6101b774d738bf37f55114ace3e6a567d7",
-    "_posts/in-the-quiet-moments.md": "6fcd6c6af99051584f583b346799f22dcb005d7539e90a6dc1c08af4e0c93bb4",
-    "template/Default Front-matter.md": "176e4f4b82831a6cbff74f0c0eacd6e4426da5f2146cfd0d4c071481604c0377",
-    "_posts/hello-world.md": "0ad379002cef34227b7c7a4a7b414d37c940795917b043ba7cc677b356a42103",
+    "_posts/Novel/reflections-in-the-mirror.md": "0f105f05b1674409ab887ef464d8f8a1f0f874f6b59618311abb30673ec116dc",
+    "_posts/in-the-quiet-moments.md": "07594d29b4dfd38894180a840542b1092f4c71dff801dcc461e6c63bfb5dac59",
+    "template/Default Front-matter.md": "653adb99fcee95ab823347928afb26ec66c24ae42e0dfe29bec269fd66cbd775",
+    "_posts/hello-world.md": "2a2fd4bc12539d11f04f4270481699eccfd019e1bd7b26a0f98fd3ca648a7652",
     "drafts/Anime API Collection.md": "b5ecb11ed4d642ac03680b98b6d04ffecfe583561024df955a0725cb8a21ea56",
-    "_posts/Novel/it-was-a-dream.md": "2a002b5a13f68942e0a2286ba869b74675412875cd5f26228ada468a0c07f065"
+    "_posts/Novel/it-was-a-dream.md": "8522dd37096c8190f201edce988be27938cf07f2c8c6633942b2790cdb82965c",
+    "_posts/Research/fitts-law-on-gaze-selection.md": "03b992d07579e4607bcf9318ae2e04106acc378032c6050a66e49f0f3c28541e",
+    "samples/computer-science/note/theme-shoka-doc/special.md": "617703e190232c472be531e35c996af473cbe392d214efa1f2f2c8b4dc2dd0b9"
   }
 }
