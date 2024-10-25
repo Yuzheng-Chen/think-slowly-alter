@@ -43,8 +43,8 @@ index:
   recent_comments: Recent Comments
 
 post:
-  posted: Posted on
-  edited: Edited on
+  posted: "Posted on "
+  edited: "Edited on "
   created: Created
   modified: Modified
   edit: Edit this post
@@ -61,7 +61,7 @@ post:
     link: Post link
     license_title: Copyright Notice
     license_content: "All articles in this blog are licensed under %s unless stating additionally."
-    nocopy: "<span class=\"red\">This page is prohibited reprint.</span>"
+    nocopy: '<span class="red">This page is prohibited reprint.</span>'
 
 footer:
   powered: "Powered by %s"
@@ -71,7 +71,7 @@ footer:
 counter:
   index:
     post: "%d posts in total"
-    category:  "%d subcategories in total, "
+    category: "%d subcategories in total, "
   tag_cloud:
     zero: No tags
     one: 1 tag in total
@@ -129,13 +129,13 @@ accessibility:
   next_page: Next page
 
 symbols_count_time:
-  count: Symbols count in article
-  count_total: Symbols count total
-  time: Reading time
-  time_total: Reading time total
-  time_minutes: mins.
-  word: words
-  view: times
+  count: "Symbols count in article "
+  count_total: "Symbols count total "
+  time: "Reading time "
+  time_total: "Reading time total "
+  time_minutes: " mins."
+  word: " words"
+  view: " times"
 
 tips:
   copyright: "Copied to clipboard successfully! <br> All articles in this blog are licensed under %s."
@@ -150,4 +150,4 @@ quiz:
   mistake: Wrong Answer
 
 outime:
-  template: "<div class=\"note warning\"><p><span class=\"label warning\">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>"
+  template: '<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>'
