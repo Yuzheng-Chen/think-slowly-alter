@@ -249,8 +249,8 @@ social:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  # position: right
+  # position: left
+  position: right
   # Replace the default avatar image under <root>/source/_data/assets/ and set the url here.
   avatar: avatar.jpg
 

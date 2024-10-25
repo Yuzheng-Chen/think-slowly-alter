@@ -15,7 +15,7 @@ top: 1
 copyright: false
 math: true
 date: 2024-10-24 17:17:14
-updated: 2024-10-25 16:20:56
+updated: 2024-10-25 22:59:41
 ---
 # Introduction to Scales and Harmony
 

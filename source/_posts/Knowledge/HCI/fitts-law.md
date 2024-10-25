@@ -1,5 +1,5 @@
 ---
-title: Fitts' Law
+title: What is Fitts' Law? Why is it so important in HCI?
 keywords: 
 tags:
   - Science
@@ -9,83 +9,129 @@ categories:
   - HCI
 description: 
 author: Yuzi
-cover: assets/covers/default-banner.jpeg
-thumbnail: assets/covers/default-banner.jpeg
+cover: assets/covers/fitts-law.png
+thumbnail: assets/covers/fitts-law.png
 comments: true
 top: 1
 copyright: false
 date: 2024-10-24 17:17:14
-updated: 2024-10-25 15:33:31
+updated: 2024-10-26 00:55:42
 math: true
 ---
 ## What is Fitts' Law?
+****
+Fitts' Law comes from [Paul Fitts](https://en.wikipedia.org/wiki/Paul_Fitts), a psychologist and a big deal in human factors (fancy way of saying he studied how people interact with stuff). Back in the 20th century, researchers had some sense of how people perform tasks, but some pretty big questions were still up in the air:
 
-Fitts' Law was proposed by Paul Fitts, who is a psychologist and a pioneer in human factors. Back to the 20th century, researcher had some overview in how human performance, but there was still some questions was not solved:
+- ==How long== does it actually take to move to a target we can see?
+- How do things like ==distance== and ==target size== affect this?
 
-- How long dose it take to make a movement to a known target?
-- How does this depend on properties of the movement task (distance and size of the target)?
+The best way to tackle these questions? Build a ==model== to predict it. So, what’s a model? In simple terms, a model is like **a blueprint or a simplified version of something that helps us understand how it works**, or even **how it might work in the future**.
 
-The best way to solve these questions is to build a model for it. But how? Because these questions are human behavior questions, Paul need some data from experiments to build the model. And the way he do this, is also how modern HCI researcher usually to solve a HCI problem.
+Models can be: 
+- ==as simple as possible== or 
+- ==as complex as they need to be==
+depending on what we’re trying to figure out. However, model is **never perfect**. They're always **based on some ==assumptions==**, so they don’t cover _everything_. Instead, they’re designed to focus on **specific phenomena**.
+
+But how do Fitts build the model? He needed ==real data== to work with, so he designed an experiment for it.
 ### Fitts' Experiment
 ![](/assets/imgs/20241025-1.png)
-Paul designed a experiment as the picture above present. This 1D task is to click a button with certain width in certain distance:
-- Four distances ($D$): 2, 4, 8, 16 inch
-- Four widths ($W$): 0.25, 0.5, 1, 2 inch
-- 16 combination
+Paul designed an experiment like the one shown in the picture above. This 1D task asked participants to **click a button of a certain width positioned at a specific distance away**. Here’s how it was set up:
+
+- **Four distances** ($D$): 2, 4, 8, and 16 inches
+- **Four widths** ($W$): 0.25, 0.5, 1, and 2 inches
+- **16 unique combinations** of distance and width
 
 ![](/assets/imgs/20241025-2.png)
 
-Participants were asked to move their pen to touch the button in the distance, and the movement time were recorded as the figure shows below:
+In this experiment, participants had to move a pen to touch the button at the specified distance, while the ==time== it took them to make each movement was recorded, as shown in the figures below.
 
 ![](/assets/imgs/20241025-3.png)
 ![](/assets/imgs/20241025-4.png)
 
-Obviously and intuitionally, the movement time increase as the distance increase, and the movement time decrease as the button size increase. But this is not the all. If we look more carefully, there is some data that really close each other:
+#### Observations
+
+Intuitively, the ==movement time== increases as the distance increases, and it decreases as the button size gets larger. But there’s more to it! When we look closely, we find **some interesting patterns where the data points are ==very close== to each other**.
+
+For example:
+
+- The movement time at $(D:2, W:0.25)$ is almost the same as at $(D:4, W:0.5)$, as well as at $(D:8, W:1)$ and $(D:16, W:2)$.
+- Similarly, the movement time at $(D:8, W:0.25)$ is close to $(D:16, W:0.5)$, and this pattern continues.
 
 ![](/assets/imgs/20241025-5.png)
 
-The figure above shows that the movement time at $(D:2, W:0.25)$ is close to the movement time at $(D:4, W:0.5)$, and also $(D:8, W:1)$ and $(D:16, W:2)$. This is not the coincident. We can also easily see that the movement time at $(D:8, W:0.25)$ is similar to the movement time at $(D:16, W:0.5)$ and so on. Hence, we can have something in conclude.
+This isn’t a coincidence! These observations lead us to some important conclusions about how distance and width together affect movement time.
 
-#### Fitts' Experiment Conclusions
+#### Conclusions
 
-Firstly, the movement time depends on the task. Different tasks have different movement time. 
+First, **movement time is ==task-dependent==**—different tasks result in different movement times.
 
-Also, the pointing task has two properties that affect performance:
-- Target distance (=Amplitude of the movement)
-- Target width (=Tolerance for landing on the target)
+In pointing tasks specifically, two key factors affect performance:
 
-When a target is nearer, we can reach it faster; 
-When a target is smaller, we have to slow down to land on it.
+- **==Target Distance== (Movement Amplitude)**: The farther the target, the longer it takes to reach.
+- **==Target Width== (Landing Tolerance)**: The smaller the target, the more we need to slow down to hit it accurately.
+
+So, if a target is ==closer==, we can reach it ==faster==; if it’s ==smaller==, we have to move ==more carefully== to land on it.
+
+Now that Fitts had some data, he could start using it to build his model.
+
 ### Index of Difficulty ($ID$)
 
-To model the result, Paul Fitts proposed to combine distance and width in to a single *index of difficulty*, measured in bits:
+To model the results, Paul Fitts proposed a way to combine both ==distance== and ==width== into a single value called the **==Index of Difficulty (ID)==**, measured in bits. The formula looks like this:
 $$ID = \log_2 \left( \frac{D}{W} + 1 \right)$$
-This formula shows the basic relation between $D$ and $W$. Generally speaking, at the same difficulty level, The $\frac{D}{W}$ should be remain the same.
+This formula captures the relationship between distance ($D$) and width ($W$). Essentially, the ==ratio== between $D$ and $W$ determines the ==difficulty of the task==. At the ==same difficulty== level, the $\frac{D}{W}$ ==ratio== should ==stay constant==.
 
-For example, these for tasks have the same $\frac{D}{W}$ ratio 8. 
-
-$ID = \log_2 (8 + 1) = 3.17 \text{ bits}$
+For example, in these tasks where $\frac{D}{W}$ equals 8:
+$$ID = \log_2 (8 + 1) = 3.17 \text{ bits}$$
 ![](/assets/imgs/20241025-5.png)
 
-The figure below visualized the pointer and the object. In the same distance, the larger target leads to a smaller $ID$; In the same size, nearer target leads to a smaller $ID$.
+In the visualization below, you can see how the pointer interacts with the object:
 
+- For targets at the ==same distance==, **==larger== targets** result in a smaller $ID$.
+- For targets of the ==same size==, **==closer== targets** result in a smaller $ID$.
 ![](/assets/imgs/20241025-8.png)
+This is how Fitts' Law starts to ==quantify the difficulty== of aiming tasks based on distance and size! But how does the **Index of Difficulty (ID)** relate to movement time? That’s where the full Fitts' Law model comes into play.
 ### Building a Fitts' Law Model
 ![](/assets/imgs/20241025-9.png)
-Movement time depends on task difficulty, and the relationship is linear. Fitts' Law: $MT = a + b * ID$, where the values for $a$ and $b$ are specific to the apparatus / device.
+As shown in the figure, movement time ($MT$) is directly related to task difficulty. This relationship is **linear** and follows Fitts’ Law:
 $$MT = a + b \cdot ID = a + b \cdot \log_2 \left( \frac{D}{W} + 1 \right)
 $$
-- Distance ($D$): distance of the target
-- Width ($W$): width of the target in the direction of the movement
-- $ID$: Index of difficulty of the task, in *bits*
-- $b$: rate at which time increases with task difficulty, in *seconds/bit*
-- $a$ is a time constant, in *seconds*
+- **Distance ($D$)**: ==Distance== to the target
+- **Width ($W$)**: ==Width== of the target in the direction of the movement
+- **$ID$ (Index of Difficulty)**: The calculated ==difficulty level== of the task, measured in _bits_
+- **$b$**: ==Rate== at which movement time increases with task difficulty, in _seconds/bit_
+- **$a$**: A ==constant time offset==, in _seconds_
 
 :::info
 - $D$, $W$ and $ID$ are properties of the movement task
-	- ++independent++ of the device used for the movement
-- $a$ and $b$ are ++device-dependent++, on the device and body part used to perform the movement
+	- ++==independent==++ of the device used for the movement
+- $a$ and $b$ are ++==device-dependent==++, on the device and body part used to perform the movement
 :::
-### Speed-Accuracy Trade-off
-### Throughput in HCI
-## Why Fitts' Law is Important?
+## Speed-Accuracy Trade-off
+Fitts’ Law captures the **==speed-accuracy trade-off==** in movement.
+- We move ==faster==, when we ==don’t== have to be ==accurate==
+- We can be ==more accurate==, when we move ==more slowly==
+
+![](/assets/imgs/20241025-12.png)
+
+The speed-accuracy trade-off is a fundamental property of input in user interfaces. For example, when we move faster, we make more errors, pointing with less precision and more typing errors.
+
+However, ==speed and accuracy== of input depend on the ==input method==. There are many factors that can influence speed and accuracy:
+- **User’s movement** in motor space (e.g., eye, head, hand movements)
+- **Input devices and trackers** used (e.g., mouse, trackpad, joystick)
+- **Mapping of input** from motor space to display space (e.g., control-display gain, transfer function)
+Collectively we refer to these as **==Factor of Device==**.
+### Control-Display Gain (CD Gain)
+
+An example of a **Factor of Device** is **Control-Display Gain (CD Gain)**. CD Gain is a scale factor that determines how input from a device (like a mouse or joystick) maps to the cursor movement on the display:
+$$CD_{\text{gain}} = \frac{V_{\text{display}}}{V_{\text{control}}}
+$$
+![](/assets/imgs/20241025-13.png)
+- **When CD Gain > 1**: Less movement of the input device is needed, allowing faster cursor movement (useful for coarse pointing).
+- **When CD Gain < 1**: The cursor moves more slowly than the input device, enabling finer, more precise control (ideal for fine positioning).
+
+## Throughput
+
+Throughput is the amount of data that can pass through a system in a given amount of time
+- In communication systems, throughput depends on bandwidth (speed) and signal-to-noise ratio (accuracy)
+- It provides a single metric of a system's efficiency, that combines speed and accuracy, measured in bit/s
+One of the key ideas underlying Fitts’ Law is that we can adopt throughput as a single measure of human performance with an input device, for the transfer of information to a computer

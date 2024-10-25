@@ -4,5 +4,6 @@
   "editing-toolbar",
   "convert-url-to-iframe",
   "obsidian-paste-image-rename",
-  "obsidian-apply-patterns"
+  "obsidian-apply-patterns",
+  "url-into-selection"
 ]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Musics/using-scales-to-build-harmony-advanced-concepts-in-music-theory.md",
+                "file": "_posts/Knowledge/HCI/fitts-law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "using-scales-to-build-harmony-advanced-concepts-in-music-theory"
+              "title": "fitts-law"
             }
           }
         ]
@@ -40,10 +40,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Musics/using-scales-to-build-harmony-advanced-concepts-in-music-theory.md"
+                "file": "_posts/Knowledge/HCI/fitts-law.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of using-scales-to-build-harmony-advanced-concepts-in-music-theory"
+              "title": "Outline of fitts-law"
             }
           }
         ]
@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,9 +168,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d27d88d5106312c",
+  "active": "c4836d8a8b7a6185",
   "lastOpenFiles": [
+    "assets/covers/fitts-law.png",
+    "assets/imgs/20241025-13.png",
     "_posts/中文/Book Notes/《审美与人的自由》读书笔记.md",
+    "_posts/Knowledge/HCI/fitts-law.md",
+    "assets/imgs/20241025-12.png.~tmp",
+    "assets/imgs/20241025-12.png",
     "_posts/Musics/using-scales-to-build-harmony-advanced-concepts-in-music-theory.md",
     "samples/computer-science/note/theme-shoka-doc/special.md",
     "samples/elements.md",
@@ -181,7 +187,6 @@
     "_posts/中文/Book Notes",
     "_posts/Tales/cover.jpg",
     "_posts/Whispers/cover.jpg",
-    "_posts/Knowledge/HCI/fitts-law.md",
     "_posts/Whispers/in-the-quiet-moments.md",
     "_posts/Knowledge",
     "_posts/Tales/reflections-in-the-mirror.md",
@@ -192,15 +197,12 @@
     "_posts/Novel/Designer (2).jpeg",
     "_posts/Knowledge/HCI",
     "template/Default Front-matter.md",
-    "assets/imgs/20241025-7.png",
-    "assets/imgs/20241025-6.png",
     "assets/imgs/20241025-3.png.md",
     "assets/imgs",
     "_posts/hello-world.md",
     "_posts/Knowledge/HCI/Research",
     "drafts/Anime API Collection.md",
     "drafts",
-    "assets/covers",
     "Untitled.md",
     "samples/images.md",
     "samples/excerpts.md",
@@ -213,7 +215,6 @@
     "samples/computer-science/note/theme-shoka-doc/display.md",
     "samples/computer-science/note/theme-shoka-doc/config.md",
     "samples/computer-science/note/theme-shoka-doc/dependents.md",
-    "samples/computer-science/java/course-1/week-2.md",
-    "samples/computer-science/java/course-1/week-1.md"
+    "samples/computer-science/java/course-1/week-2.md"
   ]
 }
