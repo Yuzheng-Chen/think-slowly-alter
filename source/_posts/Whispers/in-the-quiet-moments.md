@@ -5,13 +5,12 @@ tags:
   - life
   - moments
 categories:
-  - Thoughts
-  - Personal
+  - Whispers
 description: A reflection on life.
 author: Yuzi
 cover: assets/covers/in-the-quiet-moments.jpg
 thumbnail: assets/covers/in-the-quiet-moments.jpg
-updated: 2024-10-25 11:14:25
+updated: 2024-10-25 15:41:15
 comments: true
 top: 1
 ---

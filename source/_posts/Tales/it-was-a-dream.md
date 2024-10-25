@@ -4,7 +4,7 @@ keywords:
 tags:
   - life
 categories:
-  - Novel
+  - Tales
 description: In this haunting, dreamlike journey, reality and memory intertwine as the familiar dissolves into the unknown. Shrouded in mist, the world seems to shift with every step, where time feels suspended and certainty is elusive...
 author: Yuzi
 cover: assets/covers/it-was-a-dream.jpeg
@@ -13,7 +13,7 @@ comments: true
 top: 1
 copyright: false
 date: 2024-10-24 17:17:14
-updated: 2024-10-25 13:49:14
+updated: 2024-10-25 15:41:31
 ---
 ## Chapter 1: The Pig Farm in the Mist
 

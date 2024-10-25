@@ -1,11 +1,12 @@
 ---
-title: Fitts' Law on Gaze Selection
+title: Fitts' Law
 keywords: 
 tags:
   - Science
   - HCI
 categories:
-  - Research
+  - Knowledge
+  - HCI
 description: 
 author: Yuzi
 cover: assets/covers/default-banner.jpeg
@@ -14,7 +15,7 @@ comments: true
 top: 1
 copyright: false
 date: 2024-10-24 17:17:14
-updated: 2024-10-25 13:31:15
+updated: 2024-10-25 15:33:31
 math: true
 ---
 ## What is Fitts' Law?

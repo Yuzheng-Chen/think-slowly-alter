@@ -1,11 +1,11 @@
 ---
 title: Reflections in the Mirror
 date: 2024-10-24 03:17:31
-updated: 2024-10-25 13:49:16
+updated: 2024-10-25 15:41:35
 tags:
   - life
 categories:
-  - Novel
+  - Tales
 description: Reflections in the Mirror is a heartfelt coming-of-age story about Yūto, a primary school boy who mysteriously wakes up one day as a girl named Yuki. Struggling to navigate the complexities of a new identity, Yuki hides her past from her best friend Ren, who has returned from studying abroad as a famous basketball player. As they rekindle their friendship, Yuki wrestles with her secret, fearing how the truth might affect their bond. The story explores themes of self-identity, friendship, and acceptance, as Yuki learns to embrace both her past and present selves.
 author: Yuzi
 cover: assets/covers/reflections-in-the-mirror.jpeg
