@@ -9,13 +9,13 @@ categories:
   - HCI
 description: 
 author: Yuzi
-cover: assets/covers/fitts-law.png
-thumbnail: assets/covers/fitts-law.png
+cover: assets/covers/fitts-law.jpg
+thumbnail: assets/covers/fitts-law.jpg
 comments: true
 top: 1
 copyright: false
 date: 2024-10-24 17:17:14
-updated: 2024-10-26 00:55:42
+updated: 2024-10-30 16:08:00
 math: true
 ---
 ## What is Fitts' Law?
@@ -132,6 +132,150 @@ $$
 ## Throughput
 
 Throughput is the amount of data that can pass through a system in a given amount of time
-- In communication systems, throughput depends on bandwidth (speed) and signal-to-noise ratio (accuracy)
-- It provides a single metric of a system's efficiency, that combines speed and accuracy, measured in bit/s
-One of the key ideas underlying Fitts’ Law is that we can adopt throughput as a single measure of human performance with an input device, for the transfer of information to a computer
+
+- In **communication systems**, throughput depends on **bandwidth** (speed) and signal-to-noise ratio (accuracy)
+- It provides a single metric of a system's ==efficiency==, that combines speed and accuracy, measured in bit/s
+
+One of the key ideas underlying Fitts’ Law is that we can **adopt throughput as a single measure of human performance with an input device**, for the transfer of information to a computer.
+
+### Throughput in Fitts' Law
+
+Fitts’ Law defines **throughput (TP)** as a measure of input efficiency:
+
+$$
+
+TP = \frac{ID}{MT} \quad \text{[in bit/s]}
+
+$$
+
+- **Throughput (ID/MT)** increases when:
+    - We complete **more difficult tasks** (higher ID) within **a fixed time** (fixed MT).
+    - We need less time (lower MT) to complete a task of a given difficulty (fixed ID).
+
+Throughput combines speed and accuracy into a single metric of user performance with an input device, allowing us to assess overall input efficiency.
+
+#### Throughput - Thought Experiment
+
+![](/assets/imgs/20241027-1.jpg)
+
+;;;throughput-scenario Scenario 1: No Errors
+
+In this scenario, the user aims to be precise, avoiding any input errors. Here’s how throughput (TP = ID/MT) calculates for each interface:
+
+- **Interface A (1 bit)**: MT = 250ms (0.25 seconds).
+- **Interface B (4 bit)**: MT = 666ms (0.666 seconds.
+- **Interface C (7 bit)**: MT = 1000ms (1 second).
+
++++info Which interface has the highest throughput?
+
+- **Interface A (1 bit)**: ID = 1 bit, MT = 250ms (0.25 seconds), so TP = 1 / 0.25 = **4 bits/second**.
+- **Interface B (4 bit)**: ID = 4 bits, MT = 666ms (0.666 seconds), so TP = 4 / 0.666 ≈ **6 bits/second**.
+- **Interface C (7 bit)**: ID = 7 bits, MT = 1000ms (1 second), so TP = 7 / 1 = **7 bits/second**.
+
+**Interface C** has the highest throughput (7 bits/second) due to its higher index of difficulty (ID) and despite the slower movement time. This shows that for precise tasks, throughput is highest when there is a balance between difficulty and movement time.
+
++++
+;;;
+
+;;;throughput-scenario Scenario 2: High-Speed Input
+
+In this scenario, the user focuses on speed over accuracy, making selections at a high rate of 4 selections per second (MT = 250ms). However, with this speed, errors increase, especially as task difficulty rises. We adjust throughput to account for errors:
+
+- **Interface A (1 bit)**: Error rate = 0%.
+- **Interface B (4 bit)**: Error rate = 40%.
+- **Interface C (7 bit)**: Error rate = 80%.
+
++++info Which interface has the highest throughput?
+
+- **Interface A (1 bit)**: Error rate = 0%, so effective selections per second = 4. TP = ID × effective selections = 1 × 4 = **4 bits/second**.
+- **Interface B (4 bit)**: Error rate = 40%, so effective selections per second = 4 × (1 - 0.4) = 2.4. TP = 4 × 2.4 = **9.6 bits/second**.
+- **Interface C (7 bit)**: Error rate = 80%, so effective selections per second = 4 × (1 - 0.8) = 0.8. TP = 7 × 0.8 = **5.6 bits/second**.
+
+**Interface B** has the highest throughput (9.6 bits/second) despite the 40% error rate. This shows that at high speeds, a moderate difficulty level (4 bits) can maximize throughput by balancing speed and acceptable error rates.
+
++++
+;;;
+
+#### Slope and Throughput Approximation
+
+![](/assets/imgs/20241027-2.png)
+
+According to Fitts' Law, movement time ($MT$) can be expressed as:
+
+$$
+MT = a + b \cdot ID
+$$
+
+Since throughput ($TP$) is defined as $TP = \frac{ID}{MT}$, we can approximate throughput as the **inverse of the slope** ($b$):
+
+$$
+TP = \frac{1}{b}
+$$
+
+This means that **==the flatter the slope==**, the higher the throughput. In other words, when bbb (the rate of increase in movement time with task difficulty) is lower, throughput is higher, indicating better input efficiency.
+
+#### Throughput of Devices and Muscle Groups
+
+![](/assets/imgs/20241027-3.png)
+[Card, S. K. et al.](https://dl.acm.org/doi/pdf/10.1145/123078.128726) explored the perceived difficulty and efficiency of different tasks using a mouse and other input methods. Here are some key findings:
+
+- **Mouse tasks** and perceived difficulty:
+    - Selecting a word was considered the =="hardest easy task."==
+    - Selecting a character was labeled the =="easiest hard task."==
+- **Mouse throughput**: Approximately **10.4 bit/s** (based on 1991 data, with further optimization likely since then).
+- **Fingers**: Higher throughput of **40 bit/s**, but this applies mainly for tasks involving **adjacent buttons** rather than general tasks.
+- **Head pointing**: Less efficient, with a throughput of around **4.2 bit/s**.
+
+## Application of Fitts' Law
+
+### Fitts' Law applied to 2D Pointing
+
+![](/assets/imgs/20241027-4.png)
+$$MT = a + b \cdot \log_2 \left( \frac{D}{W} + 1 \right)
+$$
+**Distance ($D$)**: from current cursor position to center of target  
+**Width ($w$)**: across target, ==in the direction of movement==
+
+#### Example: Select the Square
+
+**Question:** Find the movement time required for a cursor to reach and select the square.  
+![](/assets/imgs/20241027-5.png)
+Use these device constants:
+
+- $a = 50ms$
+- $b = 100ms/bit$
+
+Given:
+- Distance to target, $D = 6$ cm
+- Width of the square target is $\sqrt{2}$ cm on each side.
+
+Since Fitts' Law requires the **width in the movement direction**, we calculate the effective width $W$ as the **==diagonal==** length of the square. The diagonal is given by:
+$$
+W = (\sqrt{2})^2 = 2 \text{ cm}
+$$
+
+With $W = 2$ cm, we can now apply Fitts' Law:
+$$
+MT = a + b \cdot \log_2 \left( \frac{D}{W} + 1 \right)
+$$
+
+Substituting the values:
+$$
+MT = 50 + 100 \cdot \log_2 \left( \frac{6}{2} + 1 \right)
+$$
+
+Simplifying:
+$$
+MT = 50 + 100 \cdot 2 = 250 \text{ ms}
+$$
+
+## Summary
+
+Fitts' Law is a fundamental principle in Human-Computer Interaction (HCI) and is widely applied not only in desktop devices but also in mobile and mixed reality (MR) devices for selection tasks. However, Fitts' Law specifically models the performance of **==aimed==** movements, making it effective for pointing tasks (both direct and indirect) but not applicable to tasks like drawing.
+
+Fitts' Law is based on a few key assumptions:
+
+- The target is **known in advance** (i.e., there is no search time).
+- The target is **reachable in an uninterrupted movement** (no intermediate steps).
+
+Despite these constraints, MR devices are increasingly incorporating ==**eye tracking**== as a popular input method. Whether Fitts' Law also applies to gaze-based selection remains an open question, requiring further research and experimentation.

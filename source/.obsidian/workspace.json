@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
+                "file": "_posts/Knowledge/HCI/fitts-law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how-to-read-a-research-paper"
+              "title": "fitts-law"
             }
           }
         ]
@@ -40,10 +40,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md"
+                "file": "_posts/Knowledge/HCI/fitts-law.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of how-to-read-a-research-paper"
+              "title": "Outline of fitts-law"
             }
           }
         ]
@@ -168,11 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c4836d8a8b7a6185",
+  "active": "48474ffc8342f340",
   "lastOpenFiles": [
+    "assets/covers/fitts-law.jpg",
+    "assets/imgs/20241027-4.png",
+    "assets/imgs/20241027-3.png",
+    "assets/imgs/20241027-2.png",
+    "assets/imgs/20241027-5.png",
+    "assets/imgs/20241027-1.jpg",
+    "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
     "assets/covers/how-to-read-a-paper.jpg",
     "_posts/Knowledge/HCI/fitts-law.md",
-    "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
     "assets/covers/fitts-law.png",
     "assets/imgs/20241025-13.png",
     "_posts/中文/Book Notes/《审美与人的自由》读书笔记.md",
@@ -182,13 +188,7 @@
     "samples/computer-science/note/theme-shoka-doc/special.md",
     "samples/elements.md",
     "_posts/Musics/cover.jpg",
-    "_posts/中文/cover.jpg",
-    "assets/imgs/20241025-11.png",
-    "assets/imgs/20241025-10.png",
-    "_posts/Knowledge/cover.jpg",
     "_posts/中文/Book Notes",
-    "_posts/Tales/cover.jpg",
-    "_posts/Whispers/cover.jpg",
     "_posts/Whispers/in-the-quiet-moments.md",
     "_posts/Knowledge",
     "_posts/Tales/reflections-in-the-mirror.md",

@@ -15,7 +15,7 @@ top: 1
 copyright: false
 math: true
 date: 2024-10-24 17:17:14
-updated: 2024-10-28 16:28:10
+updated: 2024-10-30 15:34:20
 ---
 Based on the [guideline](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf) made by S. Keshav in Stanford University, a effective way on reading paper is by this three-pass approach:
 
