@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Knowledge/HCI/fitts-law.md",
+                "file": "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fitts-law"
+              "title": "how-to-read-a-research-paper"
             }
           }
         ]
@@ -40,10 +40,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Knowledge/HCI/fitts-law.md"
+                "file": "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of fitts-law"
+              "title": "Outline of how-to-read-a-research-paper"
             }
           }
         ]
@@ -170,24 +170,23 @@
   },
   "active": "48474ffc8342f340",
   "lastOpenFiles": [
+    "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
+    "_posts/Knowledge/HCI/fitts-law.md",
     "assets/covers/fitts-law.jpg",
     "assets/imgs/20241027-4.png",
     "assets/imgs/20241027-3.png",
     "assets/imgs/20241027-2.png",
     "assets/imgs/20241027-5.png",
     "assets/imgs/20241027-1.jpg",
-    "_posts/Knowledge/HCI/Research/how-to-read-a-research-paper.md",
     "assets/covers/how-to-read-a-paper.jpg",
-    "_posts/Knowledge/HCI/fitts-law.md",
     "assets/covers/fitts-law.png",
     "assets/imgs/20241025-13.png",
     "_posts/中文/Book Notes/《审美与人的自由》读书笔记.md",
     "assets/imgs/20241025-12.png.~tmp",
     "assets/imgs/20241025-12.png",
     "_posts/Musics/using-scales-to-build-harmony-advanced-concepts-in-music-theory.md",
-    "samples/computer-science/note/theme-shoka-doc/special.md",
+    "_posts/theme-shoka-doc/special.md",
     "samples/elements.md",
-    "_posts/Musics/cover.jpg",
     "_posts/中文/Book Notes",
     "_posts/Whispers/in-the-quiet-moments.md",
     "_posts/Knowledge",
@@ -213,8 +212,8 @@
     "_posts/categories.md",
     "_posts/中文測試.md",
     "_posts/日本語テスト.md",
-    "samples/computer-science/note/theme-shoka-doc/display.md",
-    "samples/computer-science/note/theme-shoka-doc/config.md",
-    "samples/computer-science/note/theme-shoka-doc/dependents.md"
+    "_posts/theme-shoka-doc/display.md",
+    "_posts/theme-shoka-doc/config.md",
+    "_posts/theme-shoka-doc/dependents.md"
   ]
 }

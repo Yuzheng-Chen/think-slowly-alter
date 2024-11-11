@@ -15,7 +15,7 @@ comments: true
 top: 1
 copyright: false
 date: 2024-10-24 17:17:14
-updated: 2024-10-30 16:08:00
+updated: 2024-11-11 14:10:54
 math: true
 ---
 ## What is Fitts' Law?
